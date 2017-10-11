@@ -8,5 +8,10 @@ public class Cat extends Animal {
     public void run() {
         System.out.println("Cat is run");
     }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Meow Meow!");
+    }
 }
 

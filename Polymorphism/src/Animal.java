@@ -7,4 +7,8 @@ public class Animal {
     public void run() {
         System.out.println("Animal is run");
     }
+
+    public void makeNoise () {
+        System.out.println("Rrrr!");
+    }
 }
