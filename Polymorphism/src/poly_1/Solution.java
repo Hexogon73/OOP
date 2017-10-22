@@ -1,7 +1,15 @@
+package poly_1;
+
 import java.util.ArrayList;
+
+/**
+ * Использование суперкласса Animal в качестве полиморфного аргумента в массиве и списке
+ * (+ Объект охотник пытается подстрелить животных :))
+ */
 
 public class Solution {
     public static void main(String[] args) {
+        System.out.println("--- poly_1 ---");
         System.out.println("--- Array Polymorphysm ---");
         Animal[] animals = new Animal[3];
         animals[0] = new Dog(); //Animal animal = new Dog();
@@ -37,9 +45,9 @@ public class Solution {
         Hunter hunter = new Hunter();
         animalList.forEach(hunter::giveShot);
         /*
-        * 0 -> Dog.makeNoise()
-        * 1 -> Cat.makeNoise()
-        * 2 -> Wolf.makeNoise()
+        * 0 -> Hunter.giveShot(){Dog.makeNoise()}
+        * 1 -> Hunter.giveShot(){Cat.makeNoise()}
+        * 2 -> Hunter.giveShot(){Wolf.makeNoise()}
         * */
     }
 }

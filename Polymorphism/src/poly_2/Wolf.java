@@ -1,3 +1,5 @@
+package poly_2;
+
 public class Wolf extends Animal {
     @Override
     public void eat() {
